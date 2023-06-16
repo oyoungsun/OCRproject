@@ -18,9 +18,9 @@ easyOcr 한국어모델 koreaG2모델을 이용해 한국어 단어(위키디피
 # deep-text-recognition-benckmark 기반 EasyOCR 추가학습     
     deep-text-recognition-benchmark
       |--htr_data              
-        |--train              # AIhub 필기체 이미지 - train dataset 파일들을 포함
-        |--test               # AIhub 필기체 이미지 - test dataset 파일들을 포함
-        |--validation         # AIhub 필기체 이미지 - validation dataset 파일들을 포함
+        |--train              # AIhub 손글씨
+        |--test               
+        |--validation        
         |--get_images.py      # kor_dataset/aihub_data/htr/images에서 이미지 파일들을 가져와 train, test, validation 폴더로 분리
         |--gt_train.py        # train dataset gt file
         |--gt_test.py         # test dataset gt file
@@ -40,14 +40,14 @@ easyOcr 한국어모델 koreaG2모델을 이용해 한국어 단어(위키디피
            |--images                       # 직접 제작한 데이터셋 이미지 파일들을 포함
            |--labels.txt                   # 직접 제작한 데이터셋 이미지들에 대한 라벨링 파일
            
-    saved_models                           # Train 이후 모델이 저장되는 폴더
-      |--TPS-ResNet-BiLSTM-CTC-Seed1234
+    saved_models                           # 학습 완료 된 모델 저장위
+      |--None-ResNet-None-Attn-Seed1111 
         |--best_accuracy.pth               # 정확도 제일 높은 pretrained model
         |--...
         
-    pretrained_models                      # pretrained models를 옮겨둘 폴더
+    pretrained_models                      # EasyOCr_korean_g2 모델 넣어두는 곳
       |--kocrnn.pth
-      |--...
+      |--korean_g2.pth
         
     test                                   # 별도로 테스트할 dataset들을 저장하는 폴더
       |--images

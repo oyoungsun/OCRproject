@@ -65,3 +65,9 @@ easyOcr 한국어모델 koreaG2모델을 이용해 한국어 단어(위키디피
     test                                   # 별도로 테스트할 dataset들을 저장하는 폴더
       |--images
       |--labels.txt
+
+# 참고자료
+이미지 name 변환 및 라벨 파일 생성 코드 참고 : https://github.com/DaveLogs/TRDG2DTRB/tree/main
+
+
+

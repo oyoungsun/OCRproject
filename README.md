@@ -11,6 +11,10 @@
 # capstone1
 종합설계프로젝트 - EasyOCR 로 한국어 손글씨 인식 향상시키기
 
+## 아키텍처
+<img width="772" alt="image" src="https://github.com/oyoungsun/OCRproject/assets/63745627/f87b9181-f4b1-4ebf-9c46-4072b447026c">
+
+
 
 ### Tesseract_OCR_SampleData.ipynb
 테서렉트로 한국어 학습 후 한국어데이터(AI Hub 이용) 인식률 확인해봄.
